@@ -104,10 +104,6 @@
 	<div class="topnav">
 		<img src="image/library.jpg" alt="Notebook" style="width:100%">
 			<div class="content">
-				<form class="book_search">
-					<input type="text" placeholder="Search books.." name="search">
-					<button type="submit" id="search"><i class="fa fa-search"></i></button>
-				</form>
 					<div class="right_menu">
 						<button href="#wishlist"><i class="fa fa-history" aria-hidden="true"></i></button>
 						<button href="#wishlist" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
@@ -130,52 +126,75 @@ the right book".
     <button class="tablink button2" onclick="openPage('Sell', this, 'green')">Add Books</button>
     
     <div id="Buy" class="tabcontent">
+        <form class="book_search">
+            <input id="myInput" type="text" placeholder="Search..">
+        </form>
+        <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+        </script>
       <div class="back">  
         <div class="gallery_title"><h3><u>Online E-books Resources</u></h3></div>
         <div class="gallery_box">
             <div class="gallery">
+                <div id="myDIV">
                 <a target="_blank" href="https://www.pdfdrive.com/living-in-the-light-a-guide-to-personal-transformation-e10172273.html">
                 <img src="image/9b88b7c17f496a61fc78505130af288e.jpg" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Living in the Light: A guide to personal transformation</p> 
                 </div>
+            </a>
+            </div>
             </div>
 
             <div class="gallery">
+            <div id="myDIV">
                 <a target="_blank" href="https://www.pdfdrive.com/give-and-take-why-helping-others-drives-our-success-e58864799.html">
                 <img src="image/653f249a58f438ef343c5da5f023203d.jpg" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Give and Take: WHY HELPING OTHERS DRIVES OUR SUCCESS</p> 
                 </div>
+            </a>
+            </div>
             </div>
 
             <div class="gallery">
+                <div id="myDIV">
                 <a target="_blank" href="https://www.pdfdrive.com/mindset-the-new-psychology-of-success-e60365105.html">
                 <img src="image/33f1e381acf40f8399b0ec9f5bd7ae6b.jpg" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Mindset: The New Psychology of Success</p> 
                 </div>
+            </a>
+            </div>
             </div>
             
             <div class="gallery">
+                <div id="myDIV">
                 <a target="_blank" href="https://www.pdfdrive.com/braiding-sweetgrass-indigenous-wisdom-scientific-knowledge-and-the-teachings-of-plants-e60737077.html">
                 <img src="image/ed59854c54d482b0efb0ee9bebbd7a72.jpg" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants</p> 
                 </div>
+            </a>
+            </div>
             </div>
 
             <div class="gallery">
+                <div id="myDIV">
                 <a target="_blank" href="https://www.pdfdrive.com/born-a-crime-stories-from-a-south-african-childhood-e60737091.html">
                 <img src="image/d9dd3404a08e1452f18d3a7dc3acf517.jpg" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Born a Crime: Stories from a South African Childhood</p> 
                 </div>
+            </a>
+            </div> 
             </div>
 
         </div> 
@@ -185,49 +204,60 @@ the right book".
         <div class="gallery_title"><h3><u>Users Added Resources</u></h3></div>
         <div class="gallery_box">
             <div class="gallery">
+                <div id="myDIV">
                 <a target="_blank" href="https://www.pdfdrive.com/fundamentals-of-physics-textbook-e33735280.html">
                 <img src="image/16b1da3623f8d4a7a1e93b8e4d2155d1.jpg" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Fundamentals of Physics Textbook</p> 
                 </div>
+            </a>
+            </div>
             </div>
 
             <div class="gallery">
+                <div id="myDIV">
                 <a target="_blank" href="https://drive.google.com/drive/folders/1S3deIXx2epLDt-AzdF-Vrl9VPP480V6K">
                 <img src="image/Screenshot 2020-11-26 at 3.23.23 PM.png" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Database Management</p> 
                 </div>
+            </a>
+            </div>
             </div>
 
             <div class="gallery">
+                <div id="myDIV">
                 <a target="_blank" href="https://drive.google.com/drive/folders/1S3deIXx2epLDt-AzdF-Vrl9VPP480V6K">
                 <img src="image/Screenshot 2020-11-26 at 3.51.48 PM.png" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Microprocessor</p> 
                 </div>
+            </a>
+            </div>
             </div>
             
             <div class="gallery">
+                <div id="myDIV">
                 <a target="_blank" href="https://drive.google.com/drive/folders/1S3deIXx2epLDt-AzdF-Vrl9VPP480V6K">
                 <img src="image/Screenshot 2020-11-26 at 3.56.42 PM.png" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Multimedia Notes</p> 
                 </div>
+            </a>
+            </div>
             </div>
 
             <div class="gallery">
+                <div id="myDIV">
                 <a target="_blank" href="https://drive.google.com/drive/folders/1S3deIXx2epLDt-AzdF-Vrl9VPP480V6K">
                 <img src="image/Screenshot 2020-11-26 at 3.52.50 PM.png" alt="book1" width="600" height="400">
-                </a>
                 <div class="desc">
                     <p>Theory of computation</p> 
                 </div>
+            </a>
             </div>
+            </div>
+
         </div>
         
     </div>
@@ -279,68 +309,74 @@ the right book".
    
 <!-- Start Footer -->
 <footer class="footer-box">
-	<div class="container">
-		<div class="row">
-	   	   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-			 <div class="footer_blog">
-				<div class="full margin-bottom_30">
-				   <img src="image/footer_logo.png" alt="#" />
-				 </div>
-				 <div class="full white_fonts">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
-				 </div>
-			 </div>
-		  </div>
-		  
-		  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-			   <div class="footer_blog footer_menu white_fonts">
-						<h3>Quick links</h3>
-						<ul> 
-						  <li><a href="#">> Join Us</a></li>
-						  <li><a href="#">> Maintenance</a></li>
-						  <li><a href="#">> Language Packs</a></li>
-						  <li><a href="#">> LearnPress</a></li>
-						  <li><a href="#">> Release Status</a></li>
-						</ul>
-					 </div>
-			 </div>
-			 
-			 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-			 <div class="footer_blog full white_fonts">
-						 <h3>Newsletter</h3>
-						 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-						 <div class="newsletter_form">
-						 </div>
-					 </div>
-				</div>	 
-		  
-		  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-			 <div class="footer_blog full white_fonts">
-						 <h3>Contact us</h3>
-						 <ul class="full">
-						   <li><img src="image/i5.png"><span>London 145<br>United Kingdom</span></li>
-						   <li><img src="image/i6.png"><span>demo@gmail.com</span></li>
-						   <li><img src="image/i7.png"><span>+12586954775</span></li>
-						 </ul>
-					 </div>
-				</div>	 
-		  </div>
-	</div>
+    <div class="container">
+    
+       <div class="row">
+       
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+             <div class="footer_blog">
+                <div class="full margin-bottom_30">
+                   <img src="image/footer_logo.png" alt="#" />
+                 </div>
+                 <div class="full white_fonts">
+                    <p>We are a committed group deemed to provide the best inclass service to all our cosumers investing their trust in us.</p>
+                 </div>
+             </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+               <div class="footer_blog footer_menu white_fonts">
+                        <h3>Quick links</h3>
+                        <ul> 
+                          <li><a href="#">> Join Us</a></li>
+                          <li><a href="#">> Maintenance</a></li>
+                          <li><a href="#">> Language Packs</a></li>
+                          <li><a href="#">> LearnPress</a></li>
+                          <li><a href="#">> Release Status</a></li>
+                        </ul>
+                     </div>
+             </div>
+             
+             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+             <div class="footer_blog full white_fonts">
+                         
+                     </div>
+                </div>
+                
+                    
+               
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+             <div class="footer_blog full white_fonts">
+                         <h3>Contact us</h3>
+                         <ul class="full">
+                           <li><img src="image/i6.png"><span>perfectleran@gmail.com</span></li>
+                           <li><img src="image/i7.png"><span>+919892229815</span></li>
+                         </ul>
+                        
+                     </div>
+                </div>	 
+          
+       </div>
+    
+    </div>
 </footer>
 <!-- End Footer -->
+ 
 
 <div class="footer_bottom">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<p class="crp">© Copyrights 2019 design by html.design</p>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <p class="crp">© Copyrights 2020 Perfect-Learn</p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+    <a href="#" id="scroll-to-top" class="hvr-radial-out" ><i class="fa fa-angle-up"></i></a>
+    <a href="https://perfectleran-chatroom.herokuapp.com/" style="width: 2px;height:2px;position: fixed;bottom: 140px; right: 80px;border-radius: 50%;"><img src="https://machias.edu/career-services/wp-content/uploads/sites/28/2020/05/Chat-bubble-icon-300x300.png" width="70px"></a>
 
 <!-- ALL JS FILES -->
 <script src="js/jquery.min.js"></script>
@@ -354,89 +390,89 @@ the right book".
 <script src="js/form-validator.min.js"></script>
 <script src="js/contact-form-script.js"></script>
 <script src="js/isotope.min.js"></script>
-<script src="js/image-loded.min.js"></script>
+<script src="js/images-loded.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
 /* counter js */
 
 (function ($) {
 $.fn.countTo = function (options) {
-	options = options || {};
-	
-	return $(this).each(function () {
-		// set options for current element
-		var settings = $.extend({}, $.fn.countTo.defaults, {
-			from:            $(this).data('from'),
-			to:              $(this).data('to'),
-			speed:           $(this).data('speed'),
-			refreshInterval: $(this).data('refresh-interval'),
-			decimals:        $(this).data('decimals')
-		}, options);
-		
-		// how many times to update the value, and how much to increment the value on each update
-		var loops = Math.ceil(settings.speed / settings.refreshInterval),
-			increment = (settings.to - settings.from) / loops;
-		
-		// references & variables that will change with each update
-		var self = this,
-			$self = $(this),
-			loopCount = 0,
-			value = settings.from,
-			data = $self.data('countTo') || {};
-		
-		$self.data('countTo', data);
-		
-		// if an existing interval can be found, clear it first
-		if (data.interval) {
-			clearInterval(data.interval);
-		}
-		data.interval = setInterval(updateTimer, settings.refreshInterval);
-		
-		// initialize the element with the starting value
-		render(value);
-		
-		function updateTimer() {
-			value += increment;
-			loopCount++;
-			
-			render(value);
-			
-			if (typeof(settings.onUpdate) == 'function') {
-				settings.onUpdate.call(self, value);
-			}
-			
-			if (loopCount >= loops) {
-				// remove the interval
-				$self.removeData('countTo');
-				clearInterval(data.interval);
-				value = settings.to;
-				
-				if (typeof(settings.onComplete) == 'function') {
-					settings.onComplete.call(self, value);
-				}
-			}
-		}
-		
-		function render(value) {
-			var formattedValue = settings.formatter.call(self, value, settings);
-			$self.html(formattedValue);
-		}
-	});
+    options = options || {};
+    
+    return $(this).each(function () {
+        // set options for current element
+        var settings = $.extend({}, $.fn.countTo.defaults, {
+            from:            $(this).data('from'),
+            to:              $(this).data('to'),
+            speed:           $(this).data('speed'),
+            refreshInterval: $(this).data('refresh-interval'),
+            decimals:        $(this).data('decimals')
+        }, options);
+        
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+            increment = (settings.to - settings.from) / loops;
+        
+        // references & variables that will change with each update
+        var self = this,
+            $self = $(this),
+            loopCount = 0,
+            value = settings.from,
+            data = $self.data('countTo') || {};
+        
+        $self.data('countTo', data);
+        
+        // if an existing interval can be found, clear it first
+        if (data.interval) {
+            clearInterval(data.interval);
+        }
+        data.interval = setInterval(updateTimer, settings.refreshInterval);
+        
+        // initialize the element with the starting value
+        render(value);
+        
+        function updateTimer() {
+            value += increment;
+            loopCount++;
+            
+            render(value);
+            
+            if (typeof(settings.onUpdate) == 'function') {
+                settings.onUpdate.call(self, value);
+            }
+            
+            if (loopCount >= loops) {
+                // remove the interval
+                $self.removeData('countTo');
+                clearInterval(data.interval);
+                value = settings.to;
+                
+                if (typeof(settings.onComplete) == 'function') {
+                    settings.onComplete.call(self, value);
+                }
+            }
+        }
+        
+        function render(value) {
+            var formattedValue = settings.formatter.call(self, value, settings);
+            $self.html(formattedValue);
+        }
+    });
 };
 
 $.fn.countTo.defaults = {
-	from: 0,               // the number the element should start at
-	to: 0,                 // the number the element should end at
-	speed: 1000,           // how long it should take to count between the target numbers
-	refreshInterval: 100,  // how often the element should be updated
-	decimals: 0,           // the number of decimal places to show
-	formatter: formatter,  // handler for formatting the value before rendering
-	onUpdate: null,        // callback method for every time the element is updated
-	onComplete: null       // callback method for when the element finishes updating
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
 };
 
 function formatter(value, settings) {
-	return value.toFixed(settings.decimals);
+    return value.toFixed(settings.decimals);
 }
 }(jQuery));
 
