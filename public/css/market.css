@@ -33,7 +33,7 @@
  /* Some padding */
   }
   .topnav .img_bottom h3{
-    font-size: 2vw;
+    font-size: 3vw;
     color: white;
   }
   /* Style the search field */
@@ -101,7 +101,7 @@
   transform: translate(-50%, -50%);
 }
 .centered h3{
-font-size:2vw;
+font-size:3vw;
 color:white;
 background: rgb(0, 0, 0); /* Fallback color */
 background: rgba(0, 0, 0, 0.5);
