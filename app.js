@@ -29,7 +29,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-adi:Test123@cluster0.eetnj.mongodb.net/usersAddedBooks", {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("###Mongoose Databse server####", {useNewUrlParser: true, useUnifiedTopology: true });
 
 var imgModel = require('./model'); 
 app.get('/', (req, res) => { 
